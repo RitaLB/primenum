@@ -9,16 +9,15 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = ["http://localhost:5173"])
 class PrimeController(private val primeService: PrimeService) {
 
     @PostMapping("/calculate-primes")
     fun calculatePrimes(@RequestBody request: PrimeRequest): ResponseEntity<PrimeResponse> {
-        //val startTime = System.currentTimeMillis()
+
         val result = primeService.calculatePrimes(request.k)
         val resultnum = result.result
         val processingTime = result.calculationTime
-        //val endTime = System.currentTimeMillis()
-        //val processingTime = endTime - startTime
         return ResponseEntity.ok(PrimeResponse(resultnum, processingTime))
     }
 
