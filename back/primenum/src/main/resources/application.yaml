@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:file:database/db
+    username: sa
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.HSQLDialect
+    hibernate.ddl-auto: update
+server:
+  port: 9090
