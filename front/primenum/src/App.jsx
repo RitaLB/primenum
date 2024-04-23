@@ -7,6 +7,7 @@ function App() {
   const [result, setResult] = useState('');
   const [history, setHistory] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [validationError, setValidationError] = useState('');
 
   const handleChange = (event) => {
     setNumber(event.target.value);
@@ -18,9 +19,17 @@ function App() {
       console.log(response.data);
       setResult(response.data);
       setErrorMessage('');
+      setValidationError('');
+      setHistory('');
     } catch (error) {
       console.error('Error calculating primes:', error);
-      setErrorMessage('Fail to calculate. Connection failed.');
+      if (error.response && error.response.status === 400) {
+        setValidationError(error.response.data);
+        setResult('');
+        setHistory('');
+      } else {
+        setErrorMessage('Fail to calculate. Connection failed.');
+      }
     }
   };
 
@@ -53,6 +62,11 @@ function App() {
       {errorMessage && (
         <div className="error-message">
           <p>{errorMessage}</p>
+        </div>
+      )}
+      {validationError && (
+        <div className="validation-error">
+          <p>{validationError}</p>
         </div>
       )}
 
