@@ -13,12 +13,35 @@ import org.springframework.web.bind.annotation.*
 class PrimeController(private val primeService: PrimeService) {
 
     @PostMapping("/calculate-primes")
-    fun calculatePrimes(@RequestBody request: PrimeRequest): ResponseEntity<PrimeResponse> {
+    fun calculatePrimes(@RequestBody request: PrimeRequest): ResponseEntity<out Any> {
 
-        val result = primeService.calculatePrimes(request.k)
+        val validationResult = validateInput(request.k)
+        if (validationResult != null) {
+            return ResponseEntity.badRequest().body(validationResult)
+        }
+
+        val number = request.k.toInt()
+        val result = primeService.calculatePrimes(number)
+        //val result = primeService.calculatePrimes(request.k)
         val resultnum = result.result
         val processingTime = result.calculationTime
         return ResponseEntity.ok(PrimeResponse(resultnum, processingTime))
+    }
+    private fun validateInput(k: String): String? {
+        // Verifica se o valor de 'k' é um número inteiro válido
+        if (!k.matches(Regex("\\d+"))) {
+            return "Invalid value. Please provide a valid integer."
+        }
+
+        // Converte o valor de 'k' para inteiro
+        val number = k.toInt()
+
+        // Verifica se o valor de 'k' é positivo
+        if (number <= 0) {
+            return "Invalid value. Please provide a positive integer."
+        }
+
+        return null
     }
 
     @GetMapping("/history")
