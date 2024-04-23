@@ -1,8 +1,8 @@
 //import './App.css'
-import './styles.css'
+import '../styles.css'
 import React, { useState } from 'react';
 import axios from 'axios';
-import Sidebar from './components/Sidebar';
+import Sidebar from '../components/Sidebar';
 
 function Calculation() {
   const [number, setNumber] = useState('');
@@ -48,6 +48,7 @@ function Calculation() {
 
   return (
     <div className="container">
+      <Sidebar />
       <div className="content">
         <h1>PrimeNum</h1>
         <h2>How many prime numbers smaller than "{number}" are there?</h2>

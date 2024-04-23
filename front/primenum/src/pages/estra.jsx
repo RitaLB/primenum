@@ -48,6 +48,7 @@ function Calculation() {
 
   return (
     <div className="container">
+      <Sidebar />
       <div className="content">
         <h1>PrimeNum</h1>
         <h2>How many prime numbers smaller than "{number}" are there?</h2>
