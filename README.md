@@ -55,7 +55,10 @@ Para acessar a web aplication, siga o link fornecido pelo terminal
 3. https://www.freecodecamp.org/news/unit-testing-services-endpoints-and-repositories-in-spring-boot-4b7d9dc2b772/
 
 - Frontend:
-1. Baseei-me no padrão do vime
+1. Baseei-me no padrão do vite + react
+2. https://medium.com/m/signin
+3. https://merge.rocks/blog/building-efficient-user-interfaces-with-react
+4. https://github.com/llorentegerman/react-admin-dashboard/tree/v1-1-0
 
 ## Caso dêproblema com o vime:
 Entre no diretório pimrnum/frontend/primenum   execute os comandos:
