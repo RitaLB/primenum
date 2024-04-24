@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9088b4d-9744-4be0-ae50-00078583338f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/back.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db.script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/primenum/primenum/PrimenumApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/primenum/primenum/controller/PrimeController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/primenum/primenum/dto/PrimeRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/primenum/primenum/dto/PrimeResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/primenum/primenum/model/PrimeCalculation.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/primenum/primenum/repository/PrimeCalculationRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/primenum/primenum/service/PrimeService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/primenum/primenum/PrimenumApplicationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/primenum/primenum/integration/PrimeControllerIntegrationTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/primenum/primenum/unit/PrimeServiceTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/.idea/front.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/components/ErrorMessage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/components/History.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/components/InputForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/components/ResultDisplay.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/extra.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/primenum/vite.config.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2fLV0t4pI5Xrd56LpHxA5Nv7GSL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build primenum.executor": "Run",
+    "Gradle.PrimeControllerIntegrationTest.executor": "Run",
+    "Gradle.PrimeControllerIntegrationTest.test calculate primes endpoint.executor": "Run",
+    "Gradle.PrimeControllerIntegrationTest.test get history endpoint.executor": "Run",
+    "Gradle.PrimeControllerIntegrationTest.testCalculatePrimes.executor": "Run",
+    "Gradle.PrimeServiceTest.executor": "Run",
+    "Gradle.PrimeServiceTest.testCalculatePrimes.executor": "Run",
+    "Gradle.PrimenumApplicationTests.contextLoads.executor": "Run",
+    "Kotlin.PrimenumApplicationKt.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  },
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "/home/ritinha/.gradle"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/com/primenum/primenum" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/com/primenum" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.PrimeControllerIntegrationTest.test get history endpoint">
+    <configuration name="PrimeControllerIntegrationTest.test calculate primes endpoint" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.primenum.primenum.integration.PrimeControllerIntegrationTest.test calculate primes endpoint&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PrimeControllerIntegrationTest.test get history endpoint" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.primenum.primenum.integration.PrimeControllerIntegrationTest.test get history endpoint&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PrimeServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.primenum.primenum.unit.PrimeServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PrimeServiceTest.testCalculatePrimes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.primenum.primenum.unit.PrimeServiceTest.testCalculatePrimes&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PrimenumApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.primenum.primenum.PrimenumApplicationKt" />
+      <module name="primenum.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PrimeControllerIntegrationTest.test get history endpoint" />
+        <item itemvalue="Gradle.PrimeControllerIntegrationTest.test calculate primes endpoint" />
+        <item itemvalue="Gradle.PrimeServiceTest" />
+        <item itemvalue="Gradle.PrimeServiceTest.testCalculatePrimes" />
+        <item itemvalue="Kotlin.PrimenumApplicationKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9088b4d-9744-4be0-ae50-00078583338f" name="Changes" comment="" />
+      <created>1713580126623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713580126623</updated>
+    </task>
+    <servers />
+  </component>
+</project>
