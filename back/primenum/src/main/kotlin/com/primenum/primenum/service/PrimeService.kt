@@ -8,19 +8,42 @@ import com.primenum.primenum.repository.PrimeCalculationRepository
 class PrimeService(private val primeCalculationRepository: PrimeCalculationRepository) {
 
     fun calculatePrimes(k: Int): PrimeCalculation {
-        val startTime = System.currentTimeMillis()
+        val startTime = System.nanoTime()
 
-        //  π(x) algorithm implementation:
-        val result = k * 2
+        val prime = BooleanArray(k) { true }
+        prime[0] = false
+        prime[1] = false
 
-        val endTime = System.currentTimeMillis()
-        val processingTime = endTime - startTime
-        // Saving result on history
-        val primeCalculation = PrimeCalculation(number = k, result = result, calculationTime = processingTime )
+        var p = 2
+        while (p * p < k) {
+            if (prime[p]) {
+                var i = p * p
+                while (i < k) {
+                    prime[i] = false
+                    i += p
+                }
+            }
+            p++
+        }
+
+        var count = 0
+        for (i in 2 until k) {
+            if (prime[i]) {
+                count++
+            }
+        }
+
+        val result = count
+
+        val endTime = System.nanoTime()
+        val processingTime = (endTime - startTime) / 1000000
+
+        val primeCalculation = PrimeCalculation(number = k, result = result, calculationTime = processingTime)
         primeCalculationRepository.save(primeCalculation)
 
         return primeCalculation
     }
+
 
     fun getHistory(): List<PrimeCalculation> {
         return primeCalculationRepository.findAll()

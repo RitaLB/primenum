@@ -30,17 +30,18 @@ class PrimeController(private val primeService: PrimeService) {
     private fun validateInput(k: String): String? {
         // Verifica se o valor de 'k' é um número inteiro válido
         if (!k.matches(Regex("\\d+"))) {
-            return "Invalid value. Please provide a valid integer."
+            return "Invalid value. There are letters in your input.  Please provide a positive integer."
         }
 
-        // Converte o valor de 'k' para inteiro
-        val number = k.toInt()
-
-        // Verifica se o valor de 'k' é positivo
-        if (number <= 0) {
-            return "Invalid value. Please provide a positive integer."
+        // verificating if input numper is a possible positive integer smaller than 2.147.483.647
+        try {
+            val testNumber = k.toInt()
+            if (testNumber < 0) {
+                return "Invalid value. Please provide a positive integer."
+            }
+        } catch (e: Exception){
+            return "Invalid value. Please provide a number smaller then 2.147.483.647."
         }
-
         return null
     }
 

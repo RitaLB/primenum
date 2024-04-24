@@ -30,14 +30,14 @@ input[type="text"] {
 button {
   padding: 10px 20px;
   background-color: #8ddef9;
-  color: #ffffff;
-  border: none;
+  color: #000000;
+  border: 2px solid #0056b3; 
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #77aee9;
 }
 
 .result {
@@ -73,35 +73,3 @@ button:hover {
   }
 
 
-/* SIDEBAR ############# */
-/* Sidebar.css */
-
-.sidebar {
-  height: 100%;
-  width: 150px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #d5d5d5;
-  padding-top: 20px;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin-bottom: 15px;
-}
-
-.sidebar ul li a {
-  display: block;
-  color: rgb(42, 42, 42);
-  padding: 10px;
-  text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-  background-color: #7cc3e0fe;
-}

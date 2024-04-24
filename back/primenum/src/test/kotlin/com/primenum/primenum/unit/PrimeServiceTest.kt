@@ -30,7 +30,7 @@ class PrimeServiceTest {
     fun testCalculatePrimes() {
         // Configuração do mock
         val k = 10
-        val expectedResult = PrimeCalculation(number = k, result = k *2, calculationTime = anyLong())
+        val expectedResult = PrimeCalculation(number = k, result = 4, calculationTime = anyLong())
 
         `when`(primeCalculationRepository.save(expectedResult)).thenReturn(expectedResult)
 

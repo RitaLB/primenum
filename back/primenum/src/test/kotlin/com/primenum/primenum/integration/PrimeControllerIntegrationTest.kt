@@ -36,13 +36,13 @@ class PrimeControllerIntegrationTest {
 
     @BeforeEach
     fun setUp() {
-        val primeCalculation = PrimeCalculation(id = 1, number = 10, result = 20, calculationTime = 100)
+        val primeCalculation = PrimeCalculation(id = 1, number = 10, result = 4, calculationTime = 100)
         `when`(primeCalculationRepository.findAll()).thenReturn(listOf(primeCalculation))
     }
 
     @Test
     fun `test calculate primes endpoint`() {
-        val request = PrimeRequest(10)
+        val request = PrimeRequest("10")
 
         mockMvc.perform(
             post("/api/calculate-primes")
@@ -51,7 +51,7 @@ class PrimeControllerIntegrationTest {
         )
             .andExpect(status().isOk)
             .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-            .andExpect(jsonPath("$.result").value(20))
+            .andExpect(jsonPath("$.result").value(4))
             .andExpect(jsonPath("$.processingTime").isNumber)
     }
 
@@ -65,7 +65,7 @@ class PrimeControllerIntegrationTest {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON))
             .andExpect(jsonPath("$[0].id").value(1))
             .andExpect(jsonPath("$[0].number").value(10))
-            .andExpect(jsonPath("$[0].result").value(20))
+            .andExpect(jsonPath("$[0].result").value(4))
             .andExpect(jsonPath("$[0].calculationTime").isNumber)
     }
 }
