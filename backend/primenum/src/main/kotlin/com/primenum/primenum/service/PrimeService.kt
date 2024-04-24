@@ -9,7 +9,7 @@ class PrimeService(private val primeCalculationRepository: PrimeCalculationRepos
 
     fun calculatePrimes(k: Int): PrimeCalculation {
         val startTime = System.nanoTime()
-
+        
         val prime = BooleanArray(k) { true }
         prime[0] = false
         prime[1] = false
@@ -47,5 +47,9 @@ class PrimeService(private val primeCalculationRepository: PrimeCalculationRepos
 
     fun getHistory(): List<PrimeCalculation> {
         return primeCalculationRepository.findAll()
+    }
+
+    fun clearHistory() {
+        primeCalculationRepository.deleteAll()
     }
 }

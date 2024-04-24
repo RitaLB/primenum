@@ -28,6 +28,7 @@ Além disso, a aplicação permite que o usuário acesse o histórico de pesquis
 ### Requisitos
 - Java Development Kit (JDK) 8 ou superior instalado
 - Node.js e npm (Node Package Manager)
+- vime
 
 ### Código fonte:
 1. Clone o repositório do GitHub: git@github.com:RitaLB/primenum.git
@@ -37,7 +38,8 @@ Além disso, a aplicação permite que o usuário acesse o histórico de pesquis
 ### Executando Backend:
 - Vá até o repositório primenum/backend/primenum e execute o seguinnte comando: 
 ./gradlew bootRun
-Assim q o backend for corretamente inicializado, você pode executar o frontend.
+
+Assim q o backend for corretamente inicializado ( ficar com notificação de 85% ), você pode executar o frontend.
 
 ### Executando Frontend:
 - Vá até o repositório primenum/frontend/primenum e execute o seguinnte comando: 
@@ -45,4 +47,18 @@ npm run dev
 
 Para acessar a web aplication, siga o link fornecido pelo terminal
 ### Referências e fontes principais de consulta utilizadas
-1. 
+- Backend:
+1. https://dev.to/ronaldocoding/criando-uma-api-com-spring-boot-e-kotlin-parte-1-3pkb
+2. https://spring.io/guides/tutorials/spring-boot-kotlin
+
+- Unit Tests:
+3. https://www.freecodecamp.org/news/unit-testing-services-endpoints-and-repositories-in-spring-boot-4b7d9dc2b772/
+
+- Frontend:
+1. Baseei-me no padrão do vime
+
+## Caso dêproblema com o vime:
+Entre no diretório pimrnum/frontend/primenum   execute os comandos:
+npm install -g create-vite
+npm install --save-dev vite
+

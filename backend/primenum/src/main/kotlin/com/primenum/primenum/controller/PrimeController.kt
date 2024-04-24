@@ -50,4 +50,10 @@ class PrimeController(private val primeService: PrimeService) {
         val history = primeService.getHistory()
         return ResponseEntity.ok(history)
     }
+
+    @DeleteMapping("/clear-history")
+    fun clearHistory(): ResponseEntity<String> {
+        primeService.clearHistory()
+        return ResponseEntity.ok("History cleared successfully.")
+    }
 }
